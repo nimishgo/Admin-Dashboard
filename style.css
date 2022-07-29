@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    min-width: 400px;
+    background-color: rgb(52, 189, 243);
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    min-height: 100vh;
+}
+
+.right_section {
+    min-height: 100vh;
+    background-color: rgb(228, 228, 228);
+}
+
+li , h2{
+    margin-top : 0;
+    padding: 0;
+}
+
+ul.tabs li , ul.utilities li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
+    padding-left: 32px;
+}
+
+.top , .bottom , .logo{
+    display: grid;
+    margin: 0;
+    justify-items: start;
+    padding: 0 0 0 16px;
+}
+
+.bottom {
+    padding: 64px 0 0 16px;
+}
+ul.logos {
+    font-size: 30px;
+    margin: 8px 0;
+}
+h2.logos {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 0;
+}
+.tabs, .utilities {
+    display: grid;
+    align-items: center;
+    gap: 32px;
+    font-weight: bolder;
+} 
+
+li , ul {
+    list-style-type: none;
+}
+
+.inner__containers {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.container1 {
+    grid-column: 1 / 2;
+    padding: 16px;
+}
+
+
+.right__section{
+    grid-column: 2 / 3;
+    padding: 16px;
+    display: grid;
+    gap: 16px;
+}
+
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+    gap : 48px;
+    padding-top: 16px;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 32px 32px 16px 32px;
+    background-color: white;
+    gap: 16px;
+    font-size: 32px;
+}
+
+.heading__2 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    justify-items: start;
+    align-items: center;
+    padding: 16px 32px 16px 32px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.profile {
+    display: grid;
+    align-items: center;
+}
+
+.cards__your__projects {
+    width: auto;
+    height: 250px;
+    padding: 20px;
+    background-color: white;
+    border-left: 10px solid rgb(255, 196, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 24px;
+}
+.bottom__icons {
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.card__announcements {
+    margin-top: 16px;
+    display: grid;
+    background-color: white;
+    padding: 16px;
+    border-radius: 1em;
+    row-gap: 50px;
+    /* margin-bottom: 16px; */
+}
+
+.card__announcements > div {
+    padding-bottom: 32px;
+}
+
+.card__announcements > div:nth-child(-n + 2){
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.profile__cards {
+    margin-top: 16px;
+    min-width: 200px;
+    display: grid;
+    background-color: white;
+    padding: 16px;
+    border-radius: 1em;
+    gap: 8px;
+}
+
+#search {
+    -webkit-appearance: none;
+    width: 36vw;
+    height: 48px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    border-radius: 1.5em;
+}
+
+.search__form {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.acc__info {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+.profile__image {
+    width: 64px;
+    height: 64px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.prof__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.profile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    font-weight: bold;
+}
+
+.profile__image2 {
+    width: 5em;
+    height: 5em;
+    border: 1px solid rgb(126, 125, 125);
+    border-radius: 50%;
+}
+.nav__links {
+    display: flex;
+    gap: 32px;
+}
+.nav__links > button {
+    -webkit-appearance: none;
+    background-color: rgb(22, 146, 196);
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    font-weight: bolder;
+}
+
+.profs {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.profs p {
+    font-size: 16px;
+    font-weight: 200;
+    color: gray;
+}
